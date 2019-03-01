@@ -29,7 +29,7 @@ This version has the string_view support disabled, so the
 functions available use basic_string
 
 %prep
-%autosetup
+%autosetup -n date-%{version} 
 
 
 %build
