@@ -1,4 +1,4 @@
-Name: date
+Name: date-basic_string
 Version: 2.4.1
 Release: 1%{?dist}
 Summary: A date and time library based on the C++11/14/17 <chrono> header 
