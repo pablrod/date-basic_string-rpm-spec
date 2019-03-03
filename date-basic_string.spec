@@ -6,6 +6,7 @@ Summary: A date and time library based on the C++11/14/17 <chrono> header
 License: MIT 
 URL: https://github.com/HowardHinnant/date
 Source0: %{url}/archive/v%{version}.tar.gz
+Patch0: disable_string_view.patch
 
 BuildRequires: cmake >= 3.1.0
 BuildRequires: gcc-c++ >= 5.3.1      
@@ -30,7 +31,6 @@ functions available use basic_string
 
 %prep
 %autosetup -n date-%{version} 
-
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=/usr -DDISABLE_STRING_VIEW=ON .
